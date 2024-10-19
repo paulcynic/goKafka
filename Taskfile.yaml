@@ -1,0 +1,12 @@
+version: "3"
+
+tasks:
+  run:
+    cmds:
+      - go run ./
+
+  post:
+    cmds:
+      - go run ./cmd/publish/main.go
+      #- curl -X POST http://localhost:3000/publish/boobar --data-binary 'some bytes sent'
+
